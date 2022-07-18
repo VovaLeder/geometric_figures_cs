@@ -48,6 +48,20 @@ namespace UnitTest_GeomFigures
         }
 
         /// <summary>
+        /// Trying to initialize a triangle lengths of 2 sides of which is smaller than 3rd side
+        /// </summary>
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void Initialization_Test()
+        {
+            double a = 3;
+            double b = 4;
+            double c = 10;
+
+            Triangle triangle = new Triangle(a, b, c);
+        }
+
+        /// <summary>
         /// Checks the correctness of the calculation of the perimeter of a triangle
         /// </summary>
         [TestMethod]

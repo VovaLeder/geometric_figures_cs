@@ -6,7 +6,7 @@
     public class Triangle: Figure
     {
         private double a;
-        public double A
+        private double A
         {
             get { return a; }
             set
@@ -20,7 +20,7 @@
         }
 
         private double b;
-        public double B
+        private double B
         {
             get { return b;}
             set 
@@ -34,7 +34,7 @@
         }
 
         private double c;
-        public double C
+        private double C
         {
             get { return c; }
             set
@@ -55,6 +55,10 @@
         /// <param name="c">One of the triangles sides</param>
         public Triangle(double a, double b, double c)
         {
+            if (a + b <= c || a + c <= b || b + c <= a)
+            {
+                throw new ArgumentException("There can not be triangle with that sides. Ensure that sum of lengths of any 2 sides is greater that length of the 3rd side.");
+            }
             A = a;
             B = b;
             C = c;
