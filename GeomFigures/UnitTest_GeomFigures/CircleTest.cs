@@ -5,6 +5,9 @@ namespace UnitTest_GeomFigures
     [TestClass]
     public class CircleTest
     {
+        /// <summary>
+        /// Trying to initialize a circle with negative radius
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void Initialization_Test()
@@ -14,6 +17,9 @@ namespace UnitTest_GeomFigures
             Circle circle = new Circle(radius);
         }
 
+        /// <summary>
+        /// Checks the correctness of the calculation of the area of a circle
+        /// </summary>
         [TestMethod]
         public void GetArea_Test()
         {

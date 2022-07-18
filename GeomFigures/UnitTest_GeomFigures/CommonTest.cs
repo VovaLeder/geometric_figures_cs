@@ -5,6 +5,9 @@ namespace UnitTest_GeomFigures
     [TestClass]
     public class CommonTest
     {
+        /// <summary>
+        /// Test to show, that compiler does not know the exact class of a <c>Figure</c> instance
+        /// </summary>
         [TestMethod]
         public void Polymorphism_Test()
         {

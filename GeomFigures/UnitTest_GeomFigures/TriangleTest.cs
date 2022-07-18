@@ -5,6 +5,9 @@ namespace UnitTest_GeomFigures
     [TestClass]
     public class TriangleTest
     {
+        /// <summary>
+        /// Trying to initialize a triangle with negative side
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void Initialization_Test1()
@@ -16,6 +19,9 @@ namespace UnitTest_GeomFigures
             Triangle triangle = new Triangle(a, b, c);
         }
 
+        /// <summary>
+        /// Trying to initialize a triangle with negative side
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void Initialization_Test2()
@@ -27,6 +33,9 @@ namespace UnitTest_GeomFigures
             Triangle triangle = new Triangle(a, b, c);
         }
 
+        /// <summary>
+        /// Trying to initialize a triangle with negative side
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void Initialization_Test3()
@@ -38,6 +47,9 @@ namespace UnitTest_GeomFigures
             Triangle triangle = new Triangle(a, b, c);
         }
 
+        /// <summary>
+        /// Checks the correctness of the calculation of the perimeter of a triangle
+        /// </summary>
         [TestMethod]
         public void GetPerimeter_Test()
         {
@@ -53,6 +65,9 @@ namespace UnitTest_GeomFigures
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Checks the correctness of the calculation of the area of a triangle
+        /// </summary>
         [TestMethod]
         public void GetArea_Test()
         {
@@ -68,6 +83,9 @@ namespace UnitTest_GeomFigures
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Checks the correctness of the calculation of the rightness of a triangle (expected to be right)
+        /// </summary>
         [TestMethod]
         public void IsRight_Test1()
         {
@@ -83,6 +101,9 @@ namespace UnitTest_GeomFigures
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Checks the correctness of the calculation of the rightness of a triangle (expected to be not right)
+        /// </summary>
         [TestMethod]
         public void IsRight_Test2()
         {
