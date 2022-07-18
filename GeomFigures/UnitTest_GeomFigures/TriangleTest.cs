@@ -7,11 +7,33 @@ namespace UnitTest_GeomFigures
     {
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
-        public void Initialization_Test()
+        public void Initialization_Test1()
         {
             double a = -1;
             double b = 4;
             double c = 5;
+
+            Triangle triangle = new Triangle(a, b, c);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void Initialization_Test2()
+        {
+            double a = 3;
+            double b = -1;
+            double c = 5;
+
+            Triangle triangle = new Triangle(a, b, c);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void Initialization_Test3()
+        {
+            double a = 3;
+            double b = 4;
+            double c = -1;
 
             Triangle triangle = new Triangle(a, b, c);
         }
@@ -42,6 +64,36 @@ namespace UnitTest_GeomFigures
 
             double expected = Math.Sqrt(3) / 4;
             double actual = triangle.GetArea();
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void IsRight_Test1()
+        {
+            double a = 3;
+            double b = 4;
+            double c = 5;
+
+            Triangle triangle = new Triangle(a, b, c);
+
+            bool expected = true;
+            bool actual = triangle.IsRight();
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void IsRight_Test2()
+        {
+            double a = 3;
+            double b = 4;
+            double c = 6;
+
+            Triangle triangle = new Triangle(a, b, c);
+
+            bool expected = false;
+            bool actual = triangle.IsRight();
 
             Assert.AreEqual(expected, actual);
         }

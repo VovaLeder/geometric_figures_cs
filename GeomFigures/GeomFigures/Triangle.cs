@@ -53,20 +53,20 @@
 
         public double getPerimeter()
         {
-            return a + b + c;
+            return A + B + C;
         }
 
         public override double GetArea()
         {
             double semiPerimeter = getPerimeter() / 2;
 
-            return Math.Sqrt(semiPerimeter * (semiPerimeter - a) * (semiPerimeter - b) * (semiPerimeter - c));
+            return Math.Sqrt(semiPerimeter * (semiPerimeter - A) * (semiPerimeter - B) * (semiPerimeter - C));
         }
 
         public bool IsRight()
         {
             double area = GetArea();
-            if (a * b / 2 == area || a * c / 2 == area || b * c / 2 == area)
+            if (A * B / 2 == area || A * C / 2 == area || B * C / 2 == area)
             {
                 return true;
             }

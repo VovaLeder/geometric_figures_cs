@@ -1,17 +1,29 @@
 ﻿namespace GeomFigures
 {
-    internal class Circle : Figure
+    public class Circle : Figure
     {
-        double radius;
+        private double radius;
+        public double Radius
+        {
+            get { return radius; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Circle radius must be positive.");
+                }
+                radius = value;
+            }
+        }
 
         public Circle(double radius)
         {
-            this.radius = radius;
+            Radius = radius;
         }
 
         public override double GetArea()
         {
-            return Math.PI * radius * radius;
+            return Math.PI * Radius * Radius;
         }
     }
 }
