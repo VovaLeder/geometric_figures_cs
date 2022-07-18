@@ -1,0 +1,12 @@
+C:\Users\342\source\repos\GF\GeomFigures\GeomFigures\bin\Debug\net6.0\GeomFigures.deps.json
+C:\Users\342\source\repos\GF\GeomFigures\GeomFigures\bin\Debug\net6.0\GeomFigures.dll
+C:\Users\342\source\repos\GF\GeomFigures\GeomFigures\bin\Debug\net6.0\GeomFigures.pdb
+C:\Users\342\source\repos\GF\GeomFigures\GeomFigures\obj\Debug\net6.0\GeomFigures.csproj.AssemblyReference.cache
+C:\Users\342\source\repos\GF\GeomFigures\GeomFigures\obj\Debug\net6.0\GeomFigures.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\342\source\repos\GF\GeomFigures\GeomFigures\obj\Debug\net6.0\GeomFigures.AssemblyInfoInputs.cache
+C:\Users\342\source\repos\GF\GeomFigures\GeomFigures\obj\Debug\net6.0\GeomFigures.AssemblyInfo.cs
+C:\Users\342\source\repos\GF\GeomFigures\GeomFigures\obj\Debug\net6.0\GeomFigures.csproj.CoreCompileInputs.cache
+C:\Users\342\source\repos\GF\GeomFigures\GeomFigures\obj\Debug\net6.0\GeomFigures.dll
+C:\Users\342\source\repos\GF\GeomFigures\GeomFigures\obj\Debug\net6.0\refint\GeomFigures.dll
+C:\Users\342\source\repos\GF\GeomFigures\GeomFigures\obj\Debug\net6.0\GeomFigures.pdb
+C:\Users\342\source\repos\GF\GeomFigures\GeomFigures\obj\Debug\net6.0\ref\GeomFigures.dll
